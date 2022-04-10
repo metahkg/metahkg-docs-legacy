@@ -2,10 +2,8 @@
   <div class="DocsFooter--content">
     <div>
       <span class="DocsFooter--edit-on-gh-link-wrapper">
-        {{- with .File -}} {{- $url := (printf
-        "https://gitlab.com/metahkg/metahkg-docs/-/blob/master/content/%s"
-        .Path) -}} {{- partial "external.link" (dict "text" "Edit on GitLab"
-        "url" $url) }} {{- end -}}
+        {{- with .File -}} {{- $url := (printf "https://gitlab.com/metahkg/metahkg-docs/-/blob/master/content/%s" Path) -}}
+        {{- partial "external.link" (dict "text" "Edit on GitLab" "url" $url) }} {{- end -}}
       </span>
 
       <span class="DocsFooter--content-dot-spacer"> &nbsp; · &nbsp; </span>
