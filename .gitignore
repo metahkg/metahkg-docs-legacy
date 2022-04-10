@@ -2,6 +2,7 @@
 node_modules
 *-lock.*
 *.lock
+!yarn.lock
 *.log
 
 /public
