@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" theme="light" is-site-page is-docs-page>
+  <head>
+    {{- partial "head.meta" (dict "Context" . "Product" "home") -}}
+
+    <link rel="stylesheet" href="/home.css" />
+    {{- partial "script" (dict "src" "theme.ts" "inline" true "format" "iife")
+    -}}
+    <!-- <script>var $$r=document.documentElement;$$r.className='';!function(){var a=localStorage.getItem("dark");(a=a&&+a)||a||window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,$$r.classList.toggle("dark",a=!!a),localStorage.setItem("dark",+a+"")}()</script> -->
+    {{- partial "script" (dict "src" "home.ts" "defer" true) -}}
+  </head>
+  <body>
+    <div class="DocsPage">
+      <div class="SiteHeader">
+        <div class="SiteHeader--logo-section">
+          <a
+            aria-current="page"
+            class="SiteHeader--cloudflare-logo-link Link Link-without-underline"
+            href="/"
+          >
+            <div class="DocsNavLogoLockup">{{- partial "logo" "Docs" -}}</div>
+          </a>
+        </div>
+
+        <div class="SiteHeader--nav">
+          <a class="SiteHeader--nav-link" href="/docs"><span>Docs</span></a>
+          <a class="SiteHeader--nav-link" href="https://gitlab.com/metahkg"
+            ><span>Gitlab</span></a
+          >
+        </div>
+
+        <div class="SiteHeader--theme-toggle">
+          {{- partialCached "topbar.theme" . -}}
+        </div>
+      </div>
+
+      <div class="SiteHeader---shadow"></div>
+      <div class="SiteHeader---shadow-cover"></div>
+
+      <main class="DocsBody">
+        <div id="docs-content" data-reach-skip-nav-content></div>
+        <div class="DocsContent" page-type="developers-site">
+          <article class="DocsMarkdown">{{- .Content -}}</article>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
