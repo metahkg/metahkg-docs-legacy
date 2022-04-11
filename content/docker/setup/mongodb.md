@@ -23,9 +23,7 @@ $ docker-compose up mongo --build
 # start mongodb
 ```
 
-## Setup
-
-### Create user
+## Create user
 
 You have the root privileges in the admin database, but have no rights in other databases.
 You must create a user in the databases to do read and write operations.
@@ -47,9 +45,26 @@ metahkg-users> db.createUser({ user: "<username>", pwd: "<password>", roles: [ {
 metahkg-users> exit
 ```
 
-### Configure the databases
+## Configure the databases
 
 `<username>` and `<password>` must be the same `username` and `password` you configured in [Environmental variables](../env).
+
+### Script
+
+Create a .env file at the root of the repository.
+
+```bash
+# .env
+DB_URI=mongodb://<username>:<password>@localhost:30000
+```
+
+Run:
+
+```bash
+node mongo-setup.js
+```
+
+### Manually
 
 ```bash
 $ mongoimport --uri=mongodb://<username>:<password>@localhost:30000 -d=metahkg-threads metahkg-server/templates/server/category.json
