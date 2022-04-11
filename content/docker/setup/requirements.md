@@ -43,7 +43,7 @@ $ sudo pacman -Sy nginx
 
 ### Mongodb shell and database tools
 
-- ubuntu (20.04):
+#### Ubuntu (20.04)
 
 ```bash
 $ sudo apt install gnupg
@@ -62,7 +62,7 @@ $ sudo apt install mongodb-org-shell mongodb-org-tools
 # install mongosh and mongodb database tools
 ```
 
-- arch:
+#### Arch
 
 Install from [aur](https://aur.archlinux.org/).
 
