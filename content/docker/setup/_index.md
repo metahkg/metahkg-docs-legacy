@@ -2,7 +2,7 @@
 title: Setting up environment
 pcx-content-type: concept
 type: overview
-weight: 9
+weight: 1
 layout: list
 meta:
   title: Setting up environment

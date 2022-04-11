@@ -9,3 +9,5 @@ meta:
 ---
 
 # Deploy Metahkg using docker
+
+This docs assumes you are using the dev branch of metahkg.

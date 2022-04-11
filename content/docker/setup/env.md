@@ -2,7 +2,7 @@
 title: Environmental variables
 pcx-content-type: concept
 layout: list
-weight: 2
+weight: 3
 meta:
   title: Environmental variables
 ---
@@ -12,11 +12,11 @@ meta:
 ## Copy environment variables
 
 ```bash
-$ cd docker
-$ cp temp.env .env
+cd docker
+cp temp.env .env
 ```
 
-## Edit varibles in .env according to the descriptions.
+## Edit varibles in .env according to the descriptions
 
 ```bash
 WEB_PORT=3002

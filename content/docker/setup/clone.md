@@ -2,7 +2,7 @@
 title: Cloning the repositories
 pcx-content-type: concept
 layout: list
-weight: 1
+weight: 2
 meta:
   title: Cloning the repositories
 ---
