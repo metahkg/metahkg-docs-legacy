@@ -15,7 +15,12 @@ $ git clone --recurse-submodules https://gitlab.com/metahkg/metahkg.git
 
 $ cd metahkg
 
-$ git checkout dev # only dev branch supports docker as of 10/04/22
+$ git checkout dev
+# (or master)
 
-$ git submodule foreach git pull # update the repositories
+$ git submodule foreach git checkout dev
+# check out a branch (dev or master)
+
+$ git submodule foreach git pull 
+# update the repositories
 ```
