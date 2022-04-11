@@ -8,3 +8,8 @@ meta:
 ---
 
 # Configure nginx
+
+- [set up dns](./dns)
+- [get an ssl cert](./cert)
+- [nginx configuration](./conf)
+- [use let's encrypt](./letsencrypt)
