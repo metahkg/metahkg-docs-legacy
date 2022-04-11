@@ -10,7 +10,7 @@ meta:
 # Clone the repositories
 
 ```bash
-$ git clone --recursive-submodules https://gitlab.com/metahkg/metahkg.git
+$ git clone --recurse-submodules https://gitlab.com/metahkg/metahkg.git
 # you must clone the submodules
 
 $ cd metahkg
