@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Customize Metahkg
 type: overview
 pcx-content-type: overview
 weight: 2
@@ -11,3 +11,4 @@ meta:
 # Customize Metahkg
 
 - [Categories](./categories)
+- [Sign up mode](./signupmode)

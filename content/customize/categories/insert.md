@@ -32,3 +32,5 @@ metahkg> db.category.insertOne({ id: <newid>, name: "<new-category-name>" })
 metahkg> db.category.insertOne({ id: <newid>, name: "<new-category-name>", hidden: true })
 # hidden category
 ```
+
+Reload the app and you should now see the new category.

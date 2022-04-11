@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Categories
 type: overview
 pcx-content-type: overview
 weight: 1
