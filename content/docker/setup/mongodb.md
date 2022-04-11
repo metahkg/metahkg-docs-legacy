@@ -34,15 +34,11 @@ You must create a user in the databases to do read and write operations.
 $ mongosh mongodb://<username>:<password>@localhost:30000
 # log into mongodb
 
-test> use metahkg-threads
-# switch to metahkg-threads
-metahkg-threads> db.createUser({ user: "<username>", pwd: "<password>", roles: [ { role: "readWrite", db: "metahkg-threads" } ] })
-# create a user at metahkg-threads
-metahkg-threads> use metahkg-users
-# switch to metahkg-users
-metahkg-users> db.createUser({ user: "<username>", pwd: "<password>", roles: [ { role: "readWrite", db: "metahkg-users" } ] })
-# create a user at metahkg-users
-metahkg-users> exit
+test> use metahkg
+# switch to metahkg
+metahkg> db.createUser({ user: "<username>", pwd: "<password>", roles: [ { role: "readWrite", db: "metahkg" } ] })
+# create a user at metahkg
+metahkg> exit
 ```
 
 ## Configure the databases
@@ -71,25 +67,22 @@ $ node mongo-setup.js
 ### Manually
 
 ```bash
-$ mongoimport --uri=mongodb://<username>:<password>@localhost:30000 -d=metahkg-threads metahkg-server/templates/server/category.json
+$ mongoimport --uri=mongodb://<username>:<password>@localhost:30000 -d=metahkg metahkg-server/templates/server/category.json
 # import categories
 
 $ mongosh mongodb://<username>:<password>@localhost:30000
 # log into mongodb
 
-test> use metahkg-threads
-# switch to metahkg-threads
+test> use metahkg
+# switch to metahkg
 
-metahkg-threads> db.hottest.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 172800 })
-# expire hottest collections after two days
-metahkg-threads> db.summary.createIndex({ "op": "text", "title": "text" }) 
+metahkg> db.viral.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 172800 })
+# expire viral collections after two days
+metahkg> db.summary.createIndex({ "op": "text", "title": "text" }) 
 # for text search
-metahkg-threads> use metahkg-users
-# switch to metahkg-users
-
-metahkg-users> db.limit.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 86400 })
+metahkg> db.limit.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 86400 })
 # expire limit collections after a day
-metahkg-users> db.verification.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 604800 })
+metahkg> db.verification.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 604800 })
 # expire verification collections after 7 days
-metahkg-users> exit
+metahkg> exit
 ```
