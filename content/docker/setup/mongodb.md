@@ -30,7 +30,7 @@ $ docker-compose start mongo
 You have the root privileges in the admin database, but have no rights in other databases.
 You must create a user in the databases to do read and write operations.
 
-`<username>` and `<password>` must be the same `username` and `password` you configured in [Environmental variables](./env).
+`<username>` and `<password>` must be the same `username` and `password` you configured in [Environmental variables](../env).
 
 ```bash
 $ mongosh mongodb://<username>:<password>@localhost:30000
@@ -49,7 +49,7 @@ metahkg-users> exit
 
 ### Configure the databases
 
-`<username>` and `<password>` must be the same `username` and `password` you configured in [Environmental variables](./env).
+`<username>` and `<password>` must be the same `username` and `password` you configured in [Environmental variables](../env).
 
 ```bash
 $ mongoimport --uri=mongodb://<username>:<password>@localhost:30000 -d=metahkg-threads metahkg-server/templates/server/category.json

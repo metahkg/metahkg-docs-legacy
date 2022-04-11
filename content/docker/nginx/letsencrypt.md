@@ -9,7 +9,7 @@ meta:
 
 # Let's encrypt
 
-Please follow this if you want to use [let's encrypt](https://letsencrypt.org/) for certificate after you have configured properly in [conf](.conf).
+Please follow this if you want to use [let's encrypt](https://letsencrypt.org/) for certificate after you have configured properly in [conf](../conf).
 
 ## Install certbot
 
