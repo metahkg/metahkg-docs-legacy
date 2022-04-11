@@ -16,7 +16,7 @@ Point your domain to your server's ip address.
 - edit /etc/hosts, add a line at the end of the file
 
 ```bash
-# edit /etc/hosts
+# /etc/hosts
 
 # ...
 
