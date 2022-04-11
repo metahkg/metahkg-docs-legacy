@@ -4,10 +4,10 @@ pcx-content-type: concept
 weight: 2
 layout: list
 meta:
-  title: Ssl certificate
+  title: SSL certificate
 ---
 
-# Ssl certificate
+# SSL certificate
 
 If you already have a certificate, skip this.
 
@@ -26,7 +26,7 @@ There is a pair of self signed certificate and key on all ubuntu installations.
 # key
 ```
 
-## Generate a pair of certificate and key
+### Generate a pair of certificate and key
 
 - install openssh
 
