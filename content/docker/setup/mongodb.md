@@ -19,7 +19,7 @@ You must start mongodb before following the steps.
 $ cd docker
 # switch to the docker directory
 
-$ docker-compose start mongo
+$ docker-compose up mongo --build
 # start mongodb
 ```
 

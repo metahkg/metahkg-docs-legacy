@@ -38,10 +38,6 @@ DB_URI=mongodb://username:password@mongo:30000
 # mongodb uri for access in the containers (mongo is the container name, don't change it)
 # change the username & password (must be same as the configuration above)
 
-DB_URI_EXTERNAL=mongodb://username:password@localhost:30000
-# mongodb uri for access outside of the containers (just leave localhost there)
-# change the username & password (must be same as the configuration above)
-
 mailgun_key=<mailgun-api-key>
 # mailgun api key: obtain one at https://mailgun.com, 
 # the flex plan is free (with a limit of about 7000 emails)
