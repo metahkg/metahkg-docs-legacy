@@ -24,7 +24,7 @@ Anyone with an invite code can sign up.
 
 To add invite codes:
 
-```bash
+```javascript
 metahkg> db.invite.insertOne({ code: "<code>" })
 ```
 
