@@ -50,4 +50,11 @@ REACT_APP_recaptchasitekey=<recaptcha-site-key>
 
 recaptchasecret=<recaptcha-secret>
 # recatcha secret, must be a pair with recaptcha site key
+
+jwtKey=<your-jwt-key>
+# jwt key is used to sign jwts (jsonwebtoken), please use a strong value
+
+DOCKER_PREFIX=
+# configure this if you want to use a prefix for the docker container names
+# e.g. when you need to deploy more than a instance of metahkg
 ```
