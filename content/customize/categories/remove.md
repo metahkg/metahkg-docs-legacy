@@ -17,7 +17,7 @@ mongosh mongodb://<username>:<password>@localhost:30000/metahkg
 
 ## List the categories
 
-```bash
+```javascript
 metahkg> db.category.find().pretty()
 ```
 
@@ -29,6 +29,6 @@ Please, DO NOT remove category 1 ({ id: 1 }), or the output might not be as expe
 
 ## Remove
 
-```bash
+```javascript
 metahkg> db.category.deleteOne({ id: <id> })
 ```

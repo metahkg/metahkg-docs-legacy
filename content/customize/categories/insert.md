@@ -25,12 +25,12 @@ Use an id that does not exist yet in the next step.
 
 ## Insert
 
-```bash
+```javascript
 metahkg> db.category.insertOne({ id: <newid>, name: "<new-category-name>" })
-# normal category
+// normal category
 
 metahkg> db.category.insertOne({ id: <newid>, name: "<new-category-name>", hidden: true })
-# hidden category
+// hidden category
 ```
 
 Reload the app and you should now see the new category.
