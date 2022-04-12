@@ -54,17 +54,19 @@ $ mongoimport --uri=mongodb://<username>:<password>@localhost:30000 -d=metahkg m
 
 $ mongosh mongodb://<username>:<password>@localhost:30000
 # log into mongodb
+```
 
+```javascript
 test> use metahkg
-# switch to metahkg
+// switch to metahkg
 
 metahkg> db.viral.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 172800 })
-# expire viral collections after two days
+// expire viral collections after two days
 metahkg> db.summary.createIndex({ "op": "text", "title": "text" }) 
-# for text search
+// for text search
 metahkg> db.limit.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 86400 })
-# expire limit collections after a day
+// expire limit collections after a day
 metahkg> db.verification.createIndex({ "createdAt": 1 }, { expireAfterSeconds: 604800 })
-# expire verification collections after 7 days
+// expire verification collections after 7 days
 metahkg> exit
 ```
