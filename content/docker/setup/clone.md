@@ -27,6 +27,8 @@ $ git submodule foreach git pull
 
 ## Pull submodules after clone
 
+If you didn't use the --recurse-submodules flag when cloning, or you need to pull a new submodule, you can do this:
+
 ```bash
 $ git pull --recurse-submodules
 # pull with submodules
