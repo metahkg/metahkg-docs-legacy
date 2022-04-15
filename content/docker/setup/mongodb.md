@@ -39,11 +39,8 @@ DB_URI=mongodb://<username>:<password>@localhost:30000
 Run:
 
 ```bash
-$ yarn install
-# install the dependencies
-
-$ node mongo-setup.js
-# run the script
+$ yarn run setup
+# or npm run setup
 ```
 
 ### Manually

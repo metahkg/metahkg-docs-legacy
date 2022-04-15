@@ -19,11 +19,10 @@ cp temp.env .env
 ## Edit varibles in .env according to the descriptions
 
 ```bash
-WEB_PORT=3002
-# port for the web app
+# .env
 
-port=3001
-# port for the api
+port=3000
+# port for the whole app
 
 MONGO_PORT=30000
 # mongodb port
@@ -34,7 +33,7 @@ MONGO_USER=username
 MONGO_PASSWORD=password 
 # mongodb password
 
-DB_URI=mongodb://username:password@mongo:30000
+DB_URI=mongodb://username:password@metahkg-mongo:30000
 # mongodb uri for access in the containers (mongo is the container name, don't change it)
 # change the username & password (must be same as the configuration above)
 
