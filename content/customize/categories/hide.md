@@ -11,7 +11,7 @@ meta:
 
 If you hide a category:
 
-- it posts are not visible in [category 1](../category1)
+- its posts are not visible in [category 1](../category1)
 
 And if the user is not signed in:
 
