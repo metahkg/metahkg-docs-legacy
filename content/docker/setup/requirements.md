@@ -68,7 +68,7 @@ $ sudo pacman -Sy nginx
 
 ### Mongodb shell and database tools
 
-This is optional but useful. Required in many manual steps.
+> **_NOTE:_**  This is now optional but still recommended. Required in many manual steps.
 
 #### Ubuntu (20.04)
 

@@ -10,6 +10,8 @@ meta:
 
 # Deploy Metahkg using docker
 
+Ubuntu and archlinux are supported.
+
 - [set up environment](./setup)
 - [start containers](./start)
 - [set up nginx](./nginx)
