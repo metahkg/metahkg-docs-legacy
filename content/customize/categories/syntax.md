@@ -21,7 +21,18 @@ interface Category {
 
 ## Hidden
 
-If `hidden` is set as true, all posts in the category are hidden to anonymous users.
+**_See [hide](../hide) for more information._**
+
+If you hide a category:
+
+- it posts are not visible in [category 1](../category1)
+
+And if the user is not signed in:
+
+- they cannot view the content of its posts
+- it is hidden in the sidebar
+- they cannot directly query the list of posts in the category
+- they can find the posts in search, but cannot view the comments
 
 ## Example
 

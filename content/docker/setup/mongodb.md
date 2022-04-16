@@ -9,7 +9,7 @@ meta:
 
 # Setup mongodb
 
-> **_NOTE:_**  This is no longer necessary as mongodb is now automatically setup by metahkg-server.
+**_NOTE:_**  This is no longer necessary as mongodb is now automatically setup by metahkg-server.
 
 Assuming you configured mongodb to run on port 30000.
 
