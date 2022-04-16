@@ -26,13 +26,13 @@ By default, category 8 (Adult) is hidden.
 
 ## Hide / Unhide
 
-## Log into mongodb
+### Log into mongodb
 
 ```bash
 mongosh mongodb://<username>:<password>@localhost:30000/metahkg
 ```
 
-## List the categories
+### List the categories
 
 ```javascript
 metahkg> db.category.find().pretty()
@@ -42,7 +42,7 @@ Find the id of the one you want to hide / unhide.
 If the object has `hidden: true`, it is hidden.
 Otherwise, it is not.
 
-## Hide
+### Hide
 
 **_WARNING:_** DO NOT hide [category 1](../category1), or the output might not be as expected!
 
@@ -50,7 +50,7 @@ Otherwise, it is not.
 metahkg> db.category.updateOne({ id: <id> }, { $set: { hidden: true } })
 ```
 
-## Unhide
+### Unhide
 
 ```javascript
 metahkg> db.category.updateOne({ id: <id> }, { $unset: { hidden: 1 } })
