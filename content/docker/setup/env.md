@@ -27,14 +27,14 @@ port=3000
 MONGO_PORT=30000
 # mongodb port
 
-MONGO_USER=username 
+MONGO_USER=username
 # mongodb username
 
-MONGO_PASSWORD=password 
+MONGO_PASSWORD=password
 # mongodb password
 
 mailgun_key=<mailgun-api-key>
-# mailgun api key: obtain one at https://mailgun.com, 
+# mailgun api key: obtain one at https://mailgun.com,
 # the flex plan is free (with a limit of about 7000 emails)
 
 domain=metahkg.org
@@ -49,7 +49,7 @@ recaptchasecret=<recaptcha-secret>
 jwtKey=<your-jwt-key>
 # jwt key is used to sign jwts (jsonwebtoken), please use a strong value
 
-DOCKER_PREFIX=
+COMPOSE_PROJECT_NAME=
 # configure this if you want to use a prefix for the docker container names
 # e.g. when you need to deploy more than a instance of metahkg
 ```
