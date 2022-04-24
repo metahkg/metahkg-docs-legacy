@@ -18,7 +18,7 @@ $ sudo apt install certbot python3-certbot-nginx
 # ubuntu
 
 $ sudo pacman -Sy certbot certbot-nginx
-# nginx
+# arch
 ```
 
 ## Obtain a certificate
