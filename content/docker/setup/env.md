@@ -22,7 +22,7 @@ cp temp.env .env
 # .env
 
 port=3000
-# port for the whole app
+# port that the whole thing runs on
 
 MONGO_PORT=30000
 # mongodb port
@@ -33,12 +33,22 @@ MONGO_USER=username
 MONGO_PASSWORD=password
 # mongodb password
 
+domain=metahkg.org
+# please change to your domain name
+
 mailgun_key=<mailgun-api-key>
 # mailgun api key: obtain one at https://mailgun.com,
 # the flex plan is free (with a limit of about 7000 emails)
 
-domain=metahkg.org
-# please change to your domain name
+mailgun_domain=
+# mailgun domain, if different from the domain
+
+LINKS_DOMAIN=l.metahkg.org
+# metahkg links domain
+
+signupmode=normal
+# "normal" | "invite" | "none"
+# https://docs.metahkg.org/customize/signupmode/
 
 REACT_APP_recaptchasitekey=<recaptcha-site-key>
 # recaptcha site key, must be a pair with recaptcha secret
@@ -47,9 +57,14 @@ recaptchasecret=<recaptcha-secret>
 # recatcha secret, must be a pair with recaptcha site key
 
 jwtKey=<your-jwt-key>
-# jwt key is used to sign jwts (jsonwebtoken), please use a strong value
+# used to sign jwts, plese use a strong one
 
 COMPOSE_PROJECT_NAME=
-# configure this if you want to use a prefix for the docker container names
-# e.g. when you need to deploy more than a instance of metahkg
+# configure this for different container names (so you can run multiple instances of metahkg)
+
+cors=
+# give some value (e.g. true) to this to support cors
+
+env=
+# set this to dev to enable hot reload
 ```
