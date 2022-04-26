@@ -23,11 +23,9 @@ metahkg> db.category.find().pretty()
 
 Find the id of the one you want to remove.
 
-## Caution
-
-Please, DO NOT remove category 1 ({ id: 1 }), or the output might not be as expected.
-
 ## Remove
+
+**_WARNING:_** DO NOT remove [category 1](../category1), or the output might not be as expected.
 
 ```javascript
 metahkg> db.category.deleteOne({ id: <id> })

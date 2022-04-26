@@ -9,6 +9,8 @@ meta:
 
 # Setup mongodb
 
+**_NOTE:_**  This is no longer necessary as mongodb is now automatically setup by metahkg-server.
+
 Assuming you configured mongodb to run on port 30000.
 
 ## Start mongodb
@@ -19,7 +21,7 @@ You must start mongodb before following the steps.
 $ cd docker
 # switch to the docker directory
 
-$ docker-compose up mongo -d --build
+$ docker-compose up metahkg-mongo -d --build
 # start mongodb
 ```
 
@@ -39,11 +41,8 @@ DB_URI=mongodb://<username>:<password>@localhost:30000
 Run:
 
 ```bash
-$ yarn install
-# install the dependencies
-
-$ node mongo-setup.js
-# run the script
+$ yarn run setup
+# or npm run setup
 ```
 
 ### Manually

@@ -21,6 +21,31 @@ $ sudo pacman -Sy git
 # arch
 ```
 
+### Nodejs & yarn
+
+#### Ubuntu
+
+```bash
+$ curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+# use the nodesource setup script
+
+$ sudo apt install -y nodejs
+# install nodejs
+
+$ sudo corepack enable
+# enable yarn
+```
+
+#### Arch
+
+```bash
+$ sudo pacman -Sy nodejs
+# install nodejs
+
+$ sudo corepack enable
+# enable yarn
+```
+
 ### Docker & docker-compose
 
 ```bash
@@ -42,6 +67,8 @@ $ sudo pacman -Sy nginx
 ```
 
 ### Mongodb shell and database tools
+
+**_NOTE:_**  This is now optional but still recommended. Required in many manual steps.
 
 #### Ubuntu (20.04)
 

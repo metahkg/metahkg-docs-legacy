@@ -19,31 +19,36 @@ cp temp.env .env
 ## Edit varibles in .env according to the descriptions
 
 ```bash
-WEB_PORT=3002
-# port for the web app
+# .env
 
-port=3001
-# port for the api
+port=3000
+# port that the whole thing runs on
 
 MONGO_PORT=30000
 # mongodb port
 
-MONGO_USER=username 
+MONGO_USER=username
 # mongodb username
 
-MONGO_PASSWORD=password 
+MONGO_PASSWORD=password
 # mongodb password
-
-DB_URI=mongodb://username:password@mongo:30000
-# mongodb uri for access in the containers (mongo is the container name, don't change it)
-# change the username & password (must be same as the configuration above)
-
-mailgun_key=<mailgun-api-key>
-# mailgun api key: obtain one at https://mailgun.com, 
-# the flex plan is free (with a limit of about 7000 emails)
 
 domain=metahkg.org
 # please change to your domain name
+
+mailgun_key=<mailgun-api-key>
+# mailgun api key: obtain one at https://mailgun.com,
+# the flex plan is free (with a limit of about 7000 emails)
+
+mailgun_domain=
+# mailgun domain, if different from the domain
+
+LINKS_DOMAIN=l.metahkg.org
+# metahkg links domain
+
+signupmode=normal
+# "normal" | "invite" | "none"
+# https://docs.metahkg.org/customize/signupmode/
 
 REACT_APP_recaptchasitekey=<recaptcha-site-key>
 # recaptcha site key, must be a pair with recaptcha secret
@@ -52,9 +57,14 @@ recaptchasecret=<recaptcha-secret>
 # recatcha secret, must be a pair with recaptcha site key
 
 jwtKey=<your-jwt-key>
-# jwt key is used to sign jwts (jsonwebtoken), please use a strong value
+# used to sign jwts, plese use a strong one
 
-DOCKER_PREFIX=
-# configure this if you want to use a prefix for the docker container names
-# e.g. when you need to deploy more than a instance of metahkg
+COMPOSE_PROJECT_NAME=
+# configure this for different container names (so you can run multiple instances of metahkg)
+
+cors=
+# give some value (e.g. true) to this to support cors
+
+env=
+# set this to dev to enable hot reload
 ```
