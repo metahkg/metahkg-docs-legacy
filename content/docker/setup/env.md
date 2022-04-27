@@ -67,4 +67,7 @@ cors=
 
 env=
 # set this to dev to enable hot reload
+
+branch=master
+# select a branch (dev/master) for prebuilt images. If you use the normal build from source, ignore this.
 ```

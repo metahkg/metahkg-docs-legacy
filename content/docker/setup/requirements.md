@@ -52,7 +52,7 @@ $ sudo corepack enable
 $ sudo apt install docker.io docker-compose
 # ubuntu
 
-$ sudo pacman -Sy docker docker-compose 
+$ sudo pacman -Sy docker docker-compose
 # arch
 ```
 
@@ -121,7 +121,7 @@ $ rm -rf mongodb-tools-bin mongosh-bin
 
 ## Domain
 
-A domain (or subdomain) is necessary for a trusted https connection:
+Metahkg needs two domains / subdomains, one for link shortening and one for the web app and api.
 
 - [cloudflare](https://developers.cloudflare.com/registrar/get-started/register-domain/)
 - [namecheap](https://www.namecheap.com/)
