@@ -10,8 +10,10 @@ meta:
 
 # Deploy Metahkg using docker
 
+Docker is our recommended way to deploy Metahkg.
+
 Ubuntu and archlinux are supported.
 
 - [set up environment](./setup)
-- [start containers](./start)
+- [deploy](./deploy)
 - [set up nginx](./nginx)

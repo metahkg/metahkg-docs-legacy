@@ -1,9 +1,9 @@
 {
   "private": true,
   "version": "1.0.0",
-  "name": "cloudflare-docs",
-  "repository": "cloudflare/cloudflare-docs",
-  "description": "Cloudflare Developer Docs",
+  "name": "metahkg-docs",
+  "repository": "https://gitlab.com/metahkg/metahkg-docs",
+  "description": "Metahkg Docs",
   "scripts": {
     "dev": "hugo serve -D",
     "lint": "tsm bin/format.ts --check",
