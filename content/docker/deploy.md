@@ -31,6 +31,12 @@ $ yarn docker
 
 You can use prebuilt images so you don't need to waste hardware building (given that your machine might crash due to high memory usage).
 
+### Environment
+
+Please add `branch=master` or `branch=dev` to docker/.env if you haven't to configure which branch of images you would like to use.
+
+### Start
+
 ```bash
 $ yarn docker:prebuilt
 # pull the docker images and deploy
