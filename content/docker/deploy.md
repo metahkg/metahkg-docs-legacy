@@ -33,7 +33,7 @@ You can use prebuilt images so you don't need to waste hardware building (given 
 
 ```bash
 $ yarn docker:prebuilt
-# pull the docker images and build
+# pull the docker images and deploy
 ```
 
 ## Metahkg is now deployed locally
